@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Google fonts -->
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <title>CUDA | Web Development Team</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__left">
+            <a class="logo" href="">
+              <img src="./img/logos/logo.png" alt="Logo" class="logo__img" />
+            </a>
+          </div>
+          <div class="nav__right">
+            <input type="checkbox" id="nav__chk" class="nav__chk" />
+            <label for="nav__chk" class="nav__btn-box">
+              <div class="nav__btn"></div>
+            </label>
+
+            <ul class="nav__list">
+              <li class="nav__item"><a href="/index.html" class="nav__link nav__link_not-act">Каталог</a></li>
+              <li class="nav__item"><a href="/dostavka.html" class="nav__link nav__link_not-act">Доставка</a></li>
+              <li class="nav__item"><a href="/paiment.html" class="nav__link nav__link_not-act">Оплата</a></li>
+              <li class="nav__item"><a href="/contacts.html" class="nav__link nav__link_not-act">Контакты</a></li>
+              <li class="nav__item">
+                <a href="#!" class="nav__link nav__cart-box">
+                  <span class="badge red z-depth-1 mr-1">
+                    2
+                  </span>
+                  <i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart nav__shopping-cart"> </i>
+                  <span class="sr-only"> Cart </span>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <form class="nav__form">
+                  <div class="">
+                    <input class="nav__search" type="text" placeholder="Поиск" aria-label="Search" />
+                  </div>
+                  <button class="btn btn__search btn__hover-down" type="submit">
+                    <span class="btn__content">Поиск</span>
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <section class="catalog">
+      <div class="container catalog__container">
+        <ul class="side-nav">
+          <li class="side-nav__item">
+            <a href="" class="side-nav__link">
+              Орехи
+            </a>
+            <ul class="side-nav__dropdown">
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  Арахис
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  Арахис
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  Арахис
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  Арахис
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-nav__item">
+            <a href="" class="side-nav__link">
+              Сухофрукты
+            </a>
+            <ul class="side-nav__dropdown">
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-nav__item">
+            <a href="" class="side-nav__link">
+              Ягоды
+            </a>
+            <ul class="side-nav__dropdown">
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+              <li class="side-nav__dropdown-item">
+                <a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+                  <img src="./img/logos/logo.png" alt="img" class="side-nav__img" />
+                  <span>Арахис</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-nav__item">
+            <a href="" class="side-nav__link">
+              Мед
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="" class="side-nav__link">
+              Деликатесы
+            </a>
+          </li>
+        </ul>
+        <div class="products catalog__content">
+          <ul class="pgwSlider">
+            <li>
+              <img src="./img/fotorama/1.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" />
+            </li>
+            <li><img src="./img/fotorama/2.jpg" alt="Montréal, QC, Canada" /></li>
+
+            <li>
+              <a href="http://www.nyc.gov" target="_blank">
+                <img src="./img/fotorama/3.jpg" />
+                <span>New York, NY, USA</span>
+              </a>
+            </li>
+          </ul>
+          <div class="products">
+            <div class="products__sort">
+              <p class="products__sort-item" id="sort__alf">По алфавиту</p>
+              <p class="products__sort-item" id="sort__price">По цене</p>
+            </div>
+
+            <div class="cards features__cards-my-bottom">
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis1.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis2.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis3.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis1.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis2.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis3.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis1.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis2.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+
+              <div class="cards__cards-box">
+                <a href="" target="_blank">
+                  <div class="cards__img-box">
+                    <img src="img/products/arahis/arahis3.jpg" alt="Card" class="cards__img" />
+                  </div>
+                  <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+                </a>
+                <p class="paragraph_price">219 руб.</p>
+                <p class="paragraph_packing">Фасовка</p>
+                <p class="paragraph_packing">1 кг</p>
+                <button class="btn btn__shopping-card">
+                  <span class="btn__content">В корзину</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function() {
+        $(".pgwSlider").pgwSlider({
+          maxHeight: 400,
+          displayControls: true,
+          touchControls: true,
+          transitionEffect: "sliding",
+          autoSlide: false,
+          displayList: true,
+          adaptiveHeight: true,
+          verticalCentering: true
+        });
+      });
+    </script>
+    <!-- <section class="features features__my-bottom">
+	<div class="container">
+
+		<div class="section-header">
+			<h2 class="heading-secondary">Easy & Useful</h2>
+			<h3 class="heading-tertiary my-normal">Project Management Tool</h3>
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+		</div>
+
+		<div class="cards features__cards-my-bottom">
+
+			<div class="cards__cards-box">
+				<div class="cards__img-box">
+	              <img src="img/cards-img/card-img-1.png" alt="Card" class="cards__img">
+	            </div>
+	            <h4 class="heading-tertiary my-normal">Title Goes Here</h4>
+	            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="cards__cards-box">
+				<div class="cards__img-box">
+	              <img src="img/cards-img/card-img-1.png" alt="Card" class="cards__img">
+	            </div>
+	            <h4 class="heading-tertiary my-normal">Title Goes Here</h4>
+	            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<div class="cards__cards-box">
+				<div class="cards__img-box">
+	              <img src="img/cards-img/card-img-1.png" alt="Card" class="cards__img">
+	            </div>
+	            <h4 class="heading-tertiary my-normal">Title Goes Here</h4>
+	            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+		</div>
+		<div >
+			<a href="#" class="btn btn_primary"><span class="btn__content">Get started</span></a>	
+		</div>
+		
+	</div>
+	
+</section>
+
+<section class="statistics">
+	
+	<div class="statistics__box statistics__box_first">
+		<div class="statistics__img-box">
+			<img src="img/stat-img/business.png" alt="Image" class="statistics__img">
+		</div>
+		<div class="statistics__text">
+			<p class="statistics__p">12000+</p>
+			<p class="statistics__p">Business</p>
+		</div>
+	</div>
+
+	<div class="statistics__box statistics__box_second">
+		<div class="statistics__img-box">
+			<img src="img/stat-img/business.png" alt="Image" class="statistics__img">
+		</div>
+		<div class="statistics__text">
+			<p class="statistics__p">12000+</p>
+			<p class="statistics__p">Business</p>
+		</div>
+	</div>
+
+	<div class="statistics__box statistics__box_third">
+		<div class="statistics__img-box">
+			<img src="img/stat-img/business.png" alt="Image" class="statistics__img">
+		</div>
+		<div class="statistics__text">
+			<p class="statistics__p">12000+</p>
+			<p class="statistics__p">Business</p>
+		</div>
+	</div>
+
+	<div class="statistics__box statistics__box_fourth">
+		<div class="statistics__img-box">
+			<img src="img/stat-img/business.png" alt="Image" class="statistics__img">
+		</div>
+		<div class="statistics__text">
+			<p class="statistics__p">12000+</p>
+			<p class="statistics__p">Business</p>
+		</div>
+	</div>
+
+</section>
+
+<section class="services">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="heading-secondary">Services</h2>
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+		</div>
+		
+		<div class="services__info hamburger">
+			
+			<div class="hamburger__box my-b-normal">
+				<input type="checkbox" id="hamburger__chk-1" class="hamburger__chk">
+				<label for="hamburger__chk-1" class="hamburger__up">
+					<div class="hamburger__left">
+						<img src="img/hamburger/up.png" class="hamburger__logo" alt="Statistics">
+						<p class="paragraph hamburger__header-text">Statistics</p>
+					</div>
+					
+					<div class="hamburger__triangel"></div>
+				</label>
+				<div class="hamburger__down my-normal">
+					<img src="img/hamburger/img.png" class="hamburger__img" alt="Image">
+					<div class="hamburger__text ">
+						<p class="paragraph paragraph_dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<p class="paragraph paragraph_dark">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="hamburger__box my-b-normal">
+				<input type="checkbox" id="hamburger__chk-2" class="hamburger__chk">
+				<label for="hamburger__chk-2" class="hamburger__up">
+					<div class="hamburger__left">
+						<img src="img/hamburger/mail.png" class="hamburger__logo" alt="mail">
+						<p class="paragraph hamburger__header-text">inbox</p>
+					</div>
+					
+					<div class="hamburger__triangel"></div>
+				</label>
+				<div class="hamburger__down my-normal">
+					<img src="img/hamburger/img.png" class="hamburger__img" alt="Image">
+					<div class="hamburger__text ">
+						<p class="paragraph paragraph_dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<p class="paragraph paragraph_dark">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="hamburger__box my-b-normal">
+				<input type="checkbox" id="hamburger__chk-3" class="hamburger__chk">
+				<label for="hamburger__chk-3" class="hamburger__up">
+					<div class="hamburger__left">
+						<img src="img/hamburger/group.png" class="hamburger__logo" alt="group">
+						<p class="paragraph hamburger__header-text">team</p>
+					</div>
+					
+					<div class="hamburger__triangel"></div>
+				</label>
+				<div class="hamburger__down my-normal">
+					<img src="img/hamburger/img.png" class="hamburger__img" alt="Image">
+					<div class="hamburger__text ">
+						<p class="paragraph paragraph_dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<p class="paragraph paragraph_dark">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="hamburger__box my-b-normal">
+				<input type="checkbox" id="hamburger__chk-4" class="hamburger__chk">
+				<label for="hamburger__chk-4" class="hamburger__up">
+					<div class="hamburger__left">
+						<img src="img/hamburger/settings.png" class="hamburger__logo" alt="settings">
+						<p class="paragraph hamburger__header-text">settings</p>
+					</div>
+					
+					<div class="hamburger__triangel"></div>
+				</label>
+				<div class="hamburger__down my-normal">
+					<img src="img/hamburger/img.png" class="hamburger__img" alt="Image">
+					<div class="hamburger__text ">
+						<p class="paragraph paragraph_dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<p class="paragraph paragraph_dark">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="hamburger__box my-b-normal">
+				<input type="checkbox" id="hamburger__chk-5" class="hamburger__chk">
+				<label for="hamburger__chk-5" class="hamburger__up">
+					<div class="hamburger__left">
+						<img src="img/hamburger/rss_feed.png" class="hamburger__logo" alt="settings">
+						<p class="paragraph hamburger__header-text">feed</p>
+					</div>
+					
+					<div class="hamburger__triangel"></div>
+				</label>
+				<div class="hamburger__down my-normal">
+					<img src="img/hamburger/img.png" class="hamburger__img" alt="Image">
+					<div class="hamburger__text ">
+						<p class="paragraph paragraph_dark ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<p class="paragraph paragraph_dark">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials">
+	<div class="container testimonials__container">
+		<div class="testimonials__main">
+			<h1 class="heading-secondary heading-secondary_light testimonials__header my-normal">What our customers have to say about us.</h1>
+			<p class="paragraph paragraph_light testimonials__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			<a href="#" class="btn btn_dark"><span class="btn__content">Get started</span></a>
+		</div>
+		<div class="testimonials__persons">	
+
+			<div class="testimonials__person">
+				<img src="./img/testimonials/testimonials-person-1.png" alt="Person" class="testimonials__photo">
+				<div class="testimonials__text my-normal" >
+					<div class="paragraph_big">Khalessi</div>
+					<div class=" paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonials__person">
+				<img src="./img/testimonials/testimonials-person-2.png" alt="Person" class="testimonials__photo">
+				<div class="testimonials__text">
+					<div class="paragraph_big">John Doe</div>
+					<div class=" paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="team">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="heading-secondary">Our Team</h2>
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+		</div>
+		<div class="team__gallery">
+			<div class="team__person">
+				<div class="team__photo-box">
+					<img src="./img/team/1.png" alt="Person" class="team__photo">
+				</div>
+				
+				<div class="team__text">
+					<div class="paragraph_big">John Doe</div>
+					<div class=" paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="team__person">
+				<div class="team__photo-box">
+					<img src="./img/team/2.png" alt="Person" class="team__photo">
+				</div>
+				<div class="team__text">
+					<div class="paragraph_big">Karl Doe</div>
+					<div class=" paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo
+					</div>
+				</div>
+			</div>
+
+			<div class="team__person">
+				<div class="team__photo-box">
+					<img src="./img/team/3.png" alt="Person" class="team__photo">
+				</div>
+				<div class="team__text">
+					<div class="paragraph_big">Alex Doe</div>
+					<div class=" paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="book">
+    <div class="container">
+    	<div class="section-header">
+			<h2 class="heading-secondary">Contact us</h2>
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+		</div>
+        <form action="#" class="book__form-box">
+            
+            <div class="book__form">
+                <input type="text" class="book__input" placeholder="First name" id="name" required>
+                <input type="text" class="book__input" placeholder="Second name" id="secondName" required>
+            </div>
+            <div class="book__form">
+                <input type="email" class="book__input" placeholder="Email address" id="email" required>
+                <input type="number" class="book__input" placeholder="Phone" id="phone" required>
+            </div>
+            <div class="book__form">
+            	<textarea name="text" id="text" cols="30" rows="10" placeholder="Message" class="book__textarea"></textarea>
+            </div>
+            <div class="book__form">
+            	<div class="book__chk">
+            		<input type="checkbox" class="" id="checkbox">
+            		<label for="checkbox">Subscribe</label>
+            	</div>
+				
+                <button class="btn btn_dark">
+                    <span class="btn__content">Submit</span>
+                </button>
+            </div>   
+               
+            
+        </form>
+    </div>
+</section> -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <h3 class="heading-tertiary heading-tertiary_light my-b-normal">
+            Связаться с нами:
+          </h3>
+          <p>
+            <a rel="nofollow" href="tel:7*" class="paragraph paragraph_light my-b-normal">
+              <i class="fas fa-mobile-alt footer__icon"></i> 8 - **************
+            </a>
+          </p>
+          <p>
+            <a href="mailto:a@orexland.ru" class="paragraph paragraph_light my-b-normal">
+              <i class="fas fa-envelope-open-text footer__icon"></i> ****.@mail.ru
+            </a>
+          </p>
+        </div>
+        <div class="social">
+          <h3 class="heading-tertiary heading-tertiary_light my-b-normal">
+            Наши сети:
+          </h3>
+          <div>
+            <a href="https://www.instagram.com/aiur95_/"><i class="fab fa-instagram "></i></a>
+            <a href="https://vk.com/aiurochirov"><i class="fab fa-vk "></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
